@@ -1,4 +1,5 @@
-.container{
+/* Global styles */
+.container {
     width: 607px;
     height: 829px;
     margin: auto;
@@ -7,84 +8,204 @@
     background-image: linear-gradient(180deg, #130754 0%, #3b2f80 100%);
 }
 
-.top-bar{
+.top-bar {
     display: flex;
     justify-content: center;
     gap: 14px;
     padding-top: 60px;
 }
 
-.top-bar input{
+.top-bar input,
+.search-icon {
     display: flex;
-    width: 362px;
     height: 78px;
     background: #ebfffc;
-    border: none;
-    outline: none;
     border-radius: 40px;
-    padding-left: 40px;
     color: #626262;
     font-size: 20px;
     font-weight: 400;
 }
 
-.search-icon{
-    display: flex;
+.top-bar input {
+    width: 362px;
+    border: none;
+    outline: none;
+    padding-left: 40px;
+}
+
+.search-icon {
+    width: 78px;
     justify-content: center;
     align-items: center;
-    width: 78px;
-    height: 78px;
-    background: #ebfffc;
-    border-radius: 40px;
     cursor: pointer;
 }
 
-.weather-image{
-    margin-top: 29px;
-    display: flex;
-    justify-content: center;
-
-}
-
-.weather-temp{
+.weather-image,
+.weather-temp,
+.weather-location {
     display: flex;
     justify-content: center;
     color: white;
+}
+
+.weather-temp {
     font-size: 120px;
-    font-weight: 400;
 }
 
-.weather-location{
-    justify-content: center;
-    display: flex;
-    color: white;
+.weather-location {
     font-size: 60px;
-    font-weight: 400;
 }
 
-.data-container{
+.data-container {
     margin-top: 50px;
     color: white;
     display: flex;
     justify-content: center;
 }
-.element{
+
+.element {
     margin: auto;
     display: flex;
     align-items: flex-start;
     gap: 12px;
 }
 
-.data{
+.data {
     font-size: 34px;
     font-weight: 400;
 }
 
-.text{
+.text {
     font-size: 20px;
     font-weight: 400;
 }
-.icon{
+
+.icon {
     margin-top: 10px;
+}
+
+/* Media queries go here */
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .container {
+        width: 100%;
+        height: auto;
+        margin-top: 50px;
+        border-radius: 0;
+    }
+
+    .top-bar {
+        padding-top: 20px;
+    }
+
+    .top-bar input {
+        max-width: 300px;
+        width: 100%;
+    }
+
+    .search-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .weather-temp {
+        font-size: 80px;
+    }
+
+    .weather-location {
+        font-size: 40px;
+    }
+
+    .element {
+        gap: 8px;
+    }
+}
+
+/* Add more media queries for smaller screen sizes as necessary */
+/* Responsive styles for screens smaller than 576px (e.g., mobile devices) */
+@media (max-width: 576px) {
+    .top-bar {
+        padding-top: 10px;
+    }
     
+    .top-bar input {
+        max-width: 300px;
+    }
+    
+    .search-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .weather-temp {
+        font-size: 80px;
+    }
+    
+    .weather-location {
+        font-size: 40px;
+    }
+    
+    .element {
+        gap: 8px;
+    }
+    /* Adjust other styles as needed */
+}
+
+/* Responsive styles for screens smaller than 414px (e.g., smaller mobile devices) */
+@media (max-width: 414px) {
+    .top-bar {
+        padding-top: 5px;
+    }
+    
+    .top-bar input {
+        max-width: 250px;
+    }
+    
+    .search-icon {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .weather-temp {
+        font-size: 60px;
+    }
+    
+    .weather-location {
+        font-size: 30px;
+    }
+    
+    .element {
+        gap: 6px;
+    }
+    /* Adjust other styles as needed */
+}
+
+/* Responsive styles for screens smaller than 320px (e.g., very small mobile devices) */
+@media (max-width: 320px) {
+    .top-bar {
+        padding-top: 2px;
+    }
+    
+    .top-bar input {
+        max-width: 200px;
+    }
+    
+    .search-icon {
+        width: 30px;
+        height: 30px;
+    }
+    
+    .weather-temp {
+        font-size: 40px;
+    }
+    
+    .weather-location {
+        font-size: 20px;
+    }
+    
+    .element {
+        gap: 4px;
+    }
+    /* Adjust other styles as needed */
 }
