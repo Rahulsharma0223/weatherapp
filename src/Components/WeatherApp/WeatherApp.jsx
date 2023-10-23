@@ -29,9 +29,9 @@ const WeatherApp = () => {
         const temprature = document.getElementsByClassName("weather-temp");
         const location = document.getElementsByClassName("weather-location");
 
-        humidity[0].innerHTML = data.main.humidity;
-        wind[0].innerHTML = data.wind.speed;
-        temprature[0].innerHTML = data.main.temp;
+        humidity[0].innerHTML = data.main.humidity+" %";
+        wind[0].innerHTML = data.wind.speed+" km/h";
+        temprature[0].innerHTML = data.main.temp+"°C";
         location[0].innerHTML = data.name;
     }   
   return (
