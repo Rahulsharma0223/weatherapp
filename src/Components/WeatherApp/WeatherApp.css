@@ -5,7 +5,7 @@
     margin: auto;
     margin-top: 75px;
     border-radius: 12px;
-    background-image: linear-gradient(180deg, #130754 0%, #3b2f80 100%);
+    background-image: linear-gradient(180deg, #05fac5 0%, #7acfc1 100%);
 }
 
 .top-bar {
@@ -86,12 +86,13 @@
 
 /* Media queries go here */
 
-/* Responsive styles for smaller screens */
-@media (max-width: 768px) {
+/********** Large devices only **********/
+@media (min-width: 1200px) {
     .container {
         width: 100%;
-        height: auto;
-        margin-top: 50px;
+        height: 100;
+        margin-top: 0px;
+        margin-bottom: 0px;
         border-radius: 0;
     }
 
@@ -100,13 +101,13 @@
     }
 
     .top-bar input {
-        max-width: 300px;
+        max-width: 700px;
         width: 100%;
     }
 
     .search-icon {
-        width: 50px;
-        height: 50px;
+        width: 80px;
+        height: 80px;
     }
 
     .weather-temp {
@@ -122,20 +123,28 @@
     }
 }
 
-/* Add more media queries for smaller screen sizes as necessary */
-/* Responsive styles for screens smaller than 576px (e.g., mobile devices) */
-@media (max-width: 576px) {
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+    .container {
+        width: 100%;
+        height: 100;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-radius: 0;
+    }
+
     .top-bar {
-        padding-top: 10px;
+        padding-top: 20px;
     }
     
     .top-bar input {
-        max-width: 300px;
+        max-width: 500px;
     }
     
     .search-icon {
-        width: 50px;
-        height: 50px;
+        width: 80px;
+        height: 80px;
     }
     
     .weather-temp {
@@ -149,22 +158,32 @@
     .element {
         gap: 8px;
     }
-    /* Adjust other styles as needed */
+    
 }
 
 /* Responsive styles for screens smaller than 414px (e.g., smaller mobile devices) */
-@media (max-width: 414px) {
+@media (min-width: 326px) and (max-width: 991px) {
+
+    .container {
+        width: 100%;
+        height: 100;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        border-radius: 0;
+    }
+
     .top-bar {
         padding-top: 5px;
+        height: 10%;
     }
     
     .top-bar input {
-        max-width: 250px;
+        max-width: 150px;
     }
     
     .search-icon {
-        width: 40px;
-        height: 40px;
+        width: 80px;
+        height: 80px;
     }
     
     .weather-temp {
@@ -178,11 +197,12 @@
     .element {
         gap: 6px;
     }
-    /* Adjust other styles as needed */
+    
 }
 
-/* Responsive styles for screens smaller than 320px (e.g., very small mobile devices) */
-@media (max-width: 320px) {
+/* Responsive styles for screens smaller than 325px (e.g., very small mobile devices) */
+@media (max-width: 325px) {
+   
     .top-bar {
         padding-top: 2px;
     }
@@ -192,8 +212,8 @@
     }
     
     .search-icon {
-        width: 30px;
-        height: 30px;
+        width: 80px;
+        height: 80px;
     }
     
     .weather-temp {
@@ -207,5 +227,5 @@
     .element {
         gap: 4px;
     }
-    /* Adjust other styles as needed */
+   
 }
